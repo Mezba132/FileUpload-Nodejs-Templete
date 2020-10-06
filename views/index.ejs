@@ -1,0 +1,24 @@
+<%- include('partials/header')-%>
+<form action="/" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <h2>Upload Images In NodeJS</h2>
+        <label>Choose Your Image </label><br>
+        <input type="file" name="myfile"><br>
+        <span class="fileFormate"> Upload only image file (PNG, JPEG, GIF) </span><br>
+        <input type="submit" value="UPLOAD" class="btn btn-primary" id="btn">
+    </div>
+</form>
+
+    <h3> All Uploaded Files </h3>
+<section id="file">
+    <% fileList.forEach( (value) => { %>
+        <div class="imglist">
+            <img src="<%= "images/" + value%> " > <br>
+            <a href=" <%= "images/" + value%> "> View </a>
+            <a href="" file="<%= value %>" id="delete"> Delete </a>
+        </div>
+    <% })%>
+</section>
+
+
+<%- include('partials/footer')-%>

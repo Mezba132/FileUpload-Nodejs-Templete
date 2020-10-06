@@ -1,0 +1,12 @@
+{
+  "name": "Nokibul Amin Mezba",
+  "version": "1.0.0",
+  "description": "Simple File Upload with NodeJS",
+  "main": "",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
